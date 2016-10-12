@@ -14,7 +14,7 @@ public class BigStringTableImpl implements BigStringTable {
 
 	public String putString(String value) {
 		UrlResponse urlResponse = urlService.getShortUrl("http://" + value);
-		return urlResponse.getId().substring(15);
+		return urlResponse.getId().substring(14);
 	}
 
 	public String getString(String key) {
